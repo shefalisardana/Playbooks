@@ -1,0 +1,9 @@
+--- # variable declaration
+- hosts: demo
+  vars: 
+    packagename: ftp
+  tasks:
+    - name: package installation
+      action: yum pkg={{ ftp }} state=present
+    - name: service run
+      action: service name={{ ftp }} state=started
