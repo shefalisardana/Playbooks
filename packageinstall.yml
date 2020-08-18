@@ -2,4 +2,4 @@
 - hosts: demo
   tasks:
    - name: package installation
-     action: yum pkg=jenkins state=present
+     action: yum pkg=git state=present
