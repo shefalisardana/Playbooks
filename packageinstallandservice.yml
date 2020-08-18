@@ -4,4 +4,4 @@
    - name: package installation
      action: yum pkg=httpd state=present
    - name: service run
-     action: service pkg=httpd state=started
+     action: service name=httpd state=started
